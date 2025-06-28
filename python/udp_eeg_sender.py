@@ -3,7 +3,7 @@ import json
 from sub_data import Subcribe
 
 class UDPEEGSender(Subcribe):
-    def __init__(self, app_client_id, app_client_secret, udp_host='100.79.98.24', udp_port=5000, **kwargs): #127.0.0.1，修改这里为自己电脑的host(在GH中查看)
+    def __init__(self, app_client_id, app_client_secret, udp_host='192.168.3.4', udp_port=5000, **kwargs): #127.0.0.1，修改这里为自己电脑的host(在GH中查看)
         super().__init__(app_client_id, app_client_secret, **kwargs)
         self.udp_host = udp_host
         self.udp_port = udp_port
